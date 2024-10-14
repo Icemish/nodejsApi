@@ -1,11 +1,11 @@
 const firebase = require("firebase");
 const firebaseConfig = {
-  apiKey: "AIzaSyBqmtsey7x6DDt2kkGdVQvl_P8d_RNWc2c",
-  authDomain: "crmnodejs.firebaseapp.com",
-  projectId: "crmnodejs",
-  storageBucket: "crmnodejs.appspot.com",
-  messagingSenderId: "77505919075",
-  appId: "1:77505919075:web:f2923ae59e0efa467ea056"
+  apiKey: "AIzaSyBLn7pREcWUjB1FK2uiD95spsrEzd5Ul4M",
+  authDomain: "pruebanodeapi.firebaseapp.com",
+  projectId: "pruebanodeapi",
+  storageBucket: "pruebanodeapi.appspot.com",
+  messagingSenderId: "404995617974",
+  appId: "1:404995617974:web:2dac25a52e851dd42b2217"
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();

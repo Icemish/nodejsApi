@@ -17,7 +17,7 @@ app.get("/Products/", async(req,res)=>{
   app.put("/Products/create", async(req,res)=>{
       const data = req.body
        await Products.add(data)
-       res.send({msg:"Usuario Adicionado"})
+       res.send({msg:"Producto Adicionado"})
   });
   
   app.post("/Products/update", async (req, res) => {
@@ -25,13 +25,13 @@ app.get("/Products/", async(req,res)=>{
     delete req.body.id;
     const data = req.body;
     await Products.doc(id).update(data);
-    res.send({ msg: "Usuario Actualizado" });
+    res.send({ msg: "Producto Actualizado" });
   });
   
   app.delete("/Products/delete", async (req, res) => {
     const id = req.body.id;
     await Products.doc(id).delete();
-    res.send({ msg: "Usuario Borrado" });
+    res.send({ msg: "Producto Borrado" });
   });
 
   //USUARIOS API
